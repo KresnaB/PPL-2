@@ -20,7 +20,7 @@ status!!! isi
 
 !!! Silahlan edit apa bila ada yang kurang
 !!! BILA ANDA MALAS SAYA IKUT MALAS BILA SAYA MINTA ANDA UNTUK TIDAK MALAS TAPI ANDA TETAP MALAS ANDA BEBAL KE TULANG!!!
-!!! SILAHKAN DOWNLOAD FILE FIX kurang dikit itu sadarnya!!!
+!!! SILAHKAN DOWNLOAD FILE FIX kurang dikit itu dasarnya!!!
 !!! GK NGERTI NANYA BUKAN DIEM!!!
 
 autor KRESNA
