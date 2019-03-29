@@ -10,7 +10,7 @@ untuk menu anda boleh membuat design sendiri atau minta kelompok men designkan
 
 3.>>>>buat sound (kodingan + sound) yang membuat : Rezky
 
-4.>>>>buat vesi linked list () yang membaut : Andi
+4.>>>>buat vesi linked list () yang membuat : Andi
 
 status!!! isi
 1.
