@@ -62,6 +62,18 @@ void delbalok (game arr[BRS][KLM],int baris,int kolom,int i)
 {
     arr[baris+1][kolom+i].peta=0;
 }
+void delbalokallpage(game arr[BRS][KLM],int baris,int kolom,int i){
+      if (i==1){
+            setviewport((kolom+1)*MATRIX, (baris+1)*MATRIX,((kolom+2)*MATRIX)+1, ((baris+2)*MATRIX)+1,1);
+            clearviewport();
+            setviewport(0,0,1050,690,1);
+      }
+      if (i==2){
+            setviewport((kolom)*MATRIX, ((baris+1)*MATRIX),((kolom-1)*MATRIX)+1, ((baris+2)*MATRIX)+1,1);
+            clearviewport();
+            setviewport(0,0,1050,690,1);
+      }
+}
 void buatpeta(game arr[BRS][KLM], int* BRS_, int* KLM_)//untuk membuat array
 {
     for (int i=0 ; i<BRS ; i++){
@@ -309,7 +321,7 @@ void movement(char gerak, game arr[BRS][KLM], int* BRS_, int* KLM_)
         inspemain(arr,*BRS_,*KLM_);
 }
 //menampilkan gerakan pemain
-void movementpemain(char gerak, game arr[BRS][KLM], int baris_, int kolom_)
+void movementpemain(char gerak, game arr[BRS][KLM], int baris_, int kolom_,int page)
 {
     switch(gerak){
     case 'A' :
@@ -345,14 +357,16 @@ void movementpemain(char gerak, game arr[BRS][KLM], int baris_, int kolom_)
             atas(arr,baris_,kolom_+1);
             break;
     case 'M' :
-            setviewport((kolom_+1)*MATRIX, (baris_+1)*MATRIX,((kolom_+2)*MATRIX)+1, ((baris_+2)*MATRIX)+1,1);
-            clearviewport();
-            setviewport(0,0,1050,690,1);
+            delbalokallpage(arr,baris_,kolom_,1);
+            page = 1 - page;
+            setactivepage(page);
+            delbalokallpage(arr,baris_,kolom_,1);
             break;
     case 'N' :
-            setviewport((kolom_)*MATRIX, ((baris_+1)*MATRIX),((kolom_-1)*MATRIX)+1, ((baris_+2)*MATRIX)+1,1);
-            clearviewport();
-            setviewport(0,0,1050,690,1);
+            delbalokallpage(arr,baris_,kolom_,2);
+            page = 1 - page;
+            setactivepage(page);
+            delbalokallpage(arr,baris_,kolom_,2);
             break;
     }
 }
@@ -388,7 +402,7 @@ int main()
             delay(300);
         }
         movement(gerak,arr,&BRS_,&KLM_);
-        movementpemain(gerak,arr,BRS_,KLM_);
+        movementpemain(gerak,arr,BRS_,KLM_,page);
         if (jalan(arr,BRS_,KLM_,baris_bef,kolom_bef)){
         page = 1 - page;
         }
