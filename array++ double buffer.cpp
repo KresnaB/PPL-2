@@ -399,7 +399,8 @@ int main()
             gerak = toupper(getch());
         }else{
             gerak = 'S';
-            delay(300);
+            //delay(300); 300 turunnya kelamaan -eki
+            delay(100);
         }
         movement(gerak,arr,&BRS_,&KLM_);
         movementpemain(gerak,arr,BRS_,KLM_,page);
