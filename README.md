@@ -1,5 +1,8 @@
 # PPL-2
-keurjakeun tong di pelong hungkul!!! 
+progress:
+- gameplay 65% selesai hanya kurang musuh dan sound, sudah full animated.
+tolong jangan hanya dipelong, silahkan kerjakan ||quote ~hey sadar hey -winson reynaldi||
+
 silahkan nama anda disebelah module yang anda kerjakan list yang harus anda kerjakan
 
 1.>>>>buat score(koding plus tampilan) yang mau buat : Rizqa
