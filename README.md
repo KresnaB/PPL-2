@@ -1,6 +1,6 @@
 # PPL-2
 progress:
-- gameplay 65% selesai hanya kurang musuh dan sound, sudah full animated.
+- gameplay 65% selesai hanya kurang musuh dan sound, sudah full animated. bisa di unduh di GDRIVE kelompok
 tolong jangan hanya dipelong, silahkan kerjakan ||quote ~hey sadar hey -winson reynaldi||
 
 silahkan nama anda disebelah module yang anda kerjakan list yang harus anda kerjakan
