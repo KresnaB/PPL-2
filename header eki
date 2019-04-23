@@ -36,6 +36,11 @@ void menu(){
             goto menu;
         }
         else if((x>698)&&(x<getmaxx()-104)&&(y>530)&&(y<654)){
+            readimagefile("gambar/Setelah Awal Polos.gif",0,0,getmaxx(),getmaxy());
+            getmouseclick(WM_LBUTTONDOWN, x, y);
+            goto menu;
+        }
+        else if((x>26)&&(x<84)&&(y>600)&&(y<getmaxy()-28)){
             outtextxy(370, 240, "Terima Kasih");
             delay(200);
             exit(1);
